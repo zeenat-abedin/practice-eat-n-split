@@ -46,15 +46,37 @@ body {
   transition: 0.3s;
 }
 
-.form-add-friend {
+form {
+  font-size: 1.6rem;
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  background-color: var(--color-light);
+  align-items: center;
   gap: 1.2rem;
+
+  background-color: var(--color-lightest);
+  border-radius: 7px;
+}
+
+.form-add-friend {
+  grid-template-columns: 1fr 1.5fr;
   margin-bottom: 1.6rem;
   padding: 1.2rem;
-  border-radius: 7px;
-  /* text-align: center; */
+}
+.form-split-bill {
+  grid-template-columns: 1fr 12rem;
+  padding: 3.2rem 4rem;
+}
+
+form .button {
+  margin-top: 0.6rem;
+  grid-column: 2;
+}
+
+form h2 {
+  grid-column: 1 / -1;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+  margin-bottom: 1.6rem;
 }
 
 label {
@@ -66,7 +88,8 @@ label::first-letter {
   margin-right: 4px;
 }
 
-input {
+input,
+select {
   font-family: inherit;
   color: inherit;
   font-size: 1.5rem;
@@ -77,7 +100,8 @@ input {
   transition: 0.3s;
 }
 
-input:focus {
+input:focus,
+select:focus {
   outline: none;
   border: 1px solid var(--color-dark);
 }

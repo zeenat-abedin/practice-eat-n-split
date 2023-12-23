@@ -7,14 +7,15 @@ function FormAddFriend({ onAddFriend }) {
 
   function handleSubmit(e) {
     e.preventDefault();
-    if (!image || !name) return;
+
+    if (!name || !image) return;
 
     const id = crypto.randomUUID();
 
     const newFriend = {
       id,
       name,
-      image,
+      image: `${image}?=${id}`,
       balance: 0,
     };
 

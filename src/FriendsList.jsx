@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Friend from "./Friend";
 
-function FriendsList({ friends, selectedFriend, onSelection }) {
+function FriendsList({ friends, onSelection, selectedFriend }) {
   return (
     <ul>
       {friends.map((friend) => (

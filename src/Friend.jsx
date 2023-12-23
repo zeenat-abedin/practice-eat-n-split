@@ -5,7 +5,7 @@ function Friend({ friend, selectedFriend, onSelection }) {
   const isSelected = selectedFriend?.id === friend.id;
   return (
     <li className={isSelected ? "selected" : ""}>
-      <img src={friend.image} alt={friend.image} />
+      <img src={friend.image} alt={friend.name} />
       <h3>{friend.name}</h3>
       {friend.balance < 0 && (
         <p className="red">
@@ -21,7 +21,7 @@ function Friend({ friend, selectedFriend, onSelection }) {
         <p className="black">You and {friend.name} are even</p>
       )}
 
-      <Button onClick={() => onSelection(selectedFriend)}>
+      <Button onClick={() => onSelection(friend)}>
         {isSelected ? "Close" : "Select"}
       </Button>
     </li>
