@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# Friend Bill Splitter App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple friend bill splitter app that allows users to add friends, split bills, and view their expenses. The app is built using HTML, CSS, and JavaScript.
 
-## Available Scripts
+## Getting Started
 
-In the project directory, you can run:
+To get started, clone the repository and install the dependencies:
 
-### `npm start`
+```
+git clone https://github.com/username/friend-bill-splitter-app.git
+cd friend-bill-splitter-app
+npm install
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Once the dependencies are installed, you can run the app by running the following command:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```
+npm start
+```
 
-### `npm test`
+The app will start running on port 3000. You can access the app by visiting http://localhost:3000 in your browser.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## App Overview
 
-### `npm run build`
+The app consists of two main sections: the sidebar and the main content area.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Sidebar
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The sidebar contains a list of friends and a button to add a new friend. Each friend is represented by a profile picture, name, and email address.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Main Content Area
 
-### `npm run eject`
+The main content area contains two forms: a form to add a new friend and a form to split a bill.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### Add Friend Form
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The add friend form allows users to add a new friend to the app. To add a new friend, simply enter the friend's name and email address and click the "Add Friend" button.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### Split Bill Form
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The split bill form allows users to split a bill with their friends. To split a bill, simply enter the amount of the bill, select the friends who are splitting the bill, and click the "Split Bill" button.
 
-## Learn More
+## Code Overview
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The app is written in JavaScript using the React framework. The code is organized into several modules, each of which is responsible for a specific part of the app.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Main.js
 
-### Code Splitting
+The `Main.js` file is the main entry point of the app. This file imports the necessary modules and sets up the React components.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Sidebar.js
 
-### Analyzing the Bundle Size
+The `Sidebar.js` file defines the sidebar component. This component displays the list of friends and the button to add a new friend.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### AddFriendForm.js
 
-### Making a Progressive Web App
+The `AddFriendForm.js` file defines the add friend form component. This component allows users to add a new friend to the app.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### SplitBillForm.js
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The `SplitBillForm.js` file defines the split bill form component. This component allows users to split a bill with their friends
